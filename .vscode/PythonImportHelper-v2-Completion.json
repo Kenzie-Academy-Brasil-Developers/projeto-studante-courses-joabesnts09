@@ -1,0 +1,345 @@
+[
+    {
+        "label": "TestCase",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "isExtraImport": true,
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "baker",
+        "importPath": "model_bakery",
+        "description": "model_bakery",
+        "isExtraImport": true,
+        "detail": "model_bakery",
+        "documentation": {}
+    },
+    {
+        "label": "baker",
+        "importPath": "model_bakery",
+        "description": "model_bakery",
+        "isExtraImport": true,
+        "detail": "model_bakery",
+        "documentation": {}
+    },
+    {
+        "label": "baker",
+        "importPath": "model_bakery",
+        "description": "model_bakery",
+        "isExtraImport": true,
+        "detail": "model_bakery",
+        "documentation": {}
+    },
+    {
+        "label": "make_password",
+        "importPath": "django.contrib.auth.hashers",
+        "description": "django.contrib.auth.hashers",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.hashers",
+        "documentation": {}
+    },
+    {
+        "label": "Content",
+        "importPath": "contents.models",
+        "description": "contents.models",
+        "isExtraImport": true,
+        "detail": "contents.models",
+        "documentation": {}
+    },
+    {
+        "label": "Content",
+        "importPath": "contents.models",
+        "description": "contents.models",
+        "isExtraImport": true,
+        "detail": "contents.models",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "courses.models",
+        "description": "courses.models",
+        "isExtraImport": true,
+        "detail": "courses.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "courses.models",
+        "description": "courses.models",
+        "isExtraImport": true,
+        "detail": "courses.models",
+        "documentation": {}
+    },
+    {
+        "label": "Course",
+        "importPath": "courses.models",
+        "description": "courses.models",
+        "isExtraImport": true,
+        "detail": "courses.models",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "ManyToManyField",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "ManyToManyRel",
+        "importPath": "django.db.models.fields.reverse_related",
+        "description": "django.db.models.fields.reverse_related",
+        "isExtraImport": true,
+        "detail": "django.db.models.fields.reverse_related",
+        "documentation": {}
+    },
+    {
+        "label": "StudentCourse",
+        "importPath": "students_courses.models",
+        "description": "students_courses.models",
+        "isExtraImport": true,
+        "detail": "students_courses.models",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "TestAccountModel",
+        "kind": 6,
+        "importPath": "tests.accounts.test_models",
+        "description": "tests.accounts.test_models",
+        "peekOfCode": "class TestAccountModel(TestCase):\n    def test_username_field(self):\n        expected = 150\n        result = Account._meta.get_field(\"username\").max_length\n        message = \"Atributo 'username' possui 'max_length' diferente do esperado.\"\n        self.assertEqual(expected, result, message)\n        result = Account._meta.get_field(\"username\").unique\n        message = \"Atributo 'username' não foi configurado como único.\"\n        self.assertTrue(result, message)\n        result = Account._meta.get_field(\"username\").null",
+        "detail": "tests.accounts.test_models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCreateAccountView",
+        "kind": 6,
+        "importPath": "tests.accounts.test_views",
+        "description": "tests.accounts.test_views",
+        "peekOfCode": "class TestCreateAccountView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/accounts/\"\n    def test_can_create_superuser_with_success(self):\n        expected = 201\n        url = self.BASE_URL\n        user_data = {\n            \"username\": \"bob\",\n            \"password\": \"1234\",",
+        "detail": "tests.accounts.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestLoginAccountView",
+        "kind": 6,
+        "importPath": "tests.accounts.test_views",
+        "description": "tests.accounts.test_views",
+        "peekOfCode": "class TestLoginAccountView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/login/\"\n    def test_login_with_incorrect_credentials(self):\n        URL = self.BASE_URL\n        account_data = {\n            \"username\": \"account_1111\",\n            \"password\": \"1111\",\n        }",
+        "detail": "tests.accounts.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestContentModel",
+        "kind": 6,
+        "importPath": "tests.contents.test_models",
+        "description": "tests.contents.test_models",
+        "peekOfCode": "class TestContentModel(TestCase):\n    def test_name_field(self):\n        expected = 150\n        result = Content._meta.get_field(\"name\").max_length\n        message = \"Atributo 'name' possui 'max_length' diferente do esperado.\"\n        self.assertEqual(expected, result, message)\n        result = Content._meta.get_field(\"name\").null\n        message = \"Atributo 'name' deve ser obrigatório.\"\n        self.assertFalse(result, message)\n    def test_content_field(self):",
+        "detail": "tests.contents.test_models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCreateContentView",
+        "kind": 6,
+        "importPath": "tests.contents.test_views",
+        "description": "tests.contents.test_views",
+        "peekOfCode": "class TestCreateContentView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/{}/contents/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.contents.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestRetrieveContentView",
+        "kind": 6,
+        "importPath": "tests.contents.test_views",
+        "description": "tests.contents.test_views",
+        "peekOfCode": "class TestRetrieveContentView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/{}/contents/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.contents.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestUpdateContentView",
+        "kind": 6,
+        "importPath": "tests.contents.test_views",
+        "description": "tests.contents.test_views",
+        "peekOfCode": "class TestUpdateContentView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/{}/contents/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.contents.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestDeleteContentView",
+        "kind": 6,
+        "importPath": "tests.contents.test_views",
+        "description": "tests.contents.test_views",
+        "peekOfCode": "class TestDeleteContentView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/{}/contents/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.contents.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestCourseModel",
+        "kind": 6,
+        "importPath": "tests.courses.test_models",
+        "description": "tests.courses.test_models",
+        "peekOfCode": "class TestCourseModel(TestCase):\n    def test_name_field(self):\n        expected = 100\n        result = Course._meta.get_field(\"name\").max_length\n        message = \"Atributo 'name' possui 'max_length' diferente do esperado.\"\n        self.assertEqual(expected, result, message)\n        result = Course._meta.get_field(\"name\").unique\n        message = \"Atributo 'name' não foi configurado como único.\"\n        self.assertTrue(result, message)\n        result = Course._meta.get_field(\"name\").null",
+        "detail": "tests.courses.test_models",
+        "documentation": {}
+    },
+    {
+        "label": "TestRelationshipTest",
+        "kind": 6,
+        "importPath": "tests.courses.test_models",
+        "description": "tests.courses.test_models",
+        "peekOfCode": "class TestRelationshipTest(TestCase):\n    def test_one_to_many_between_account_course(self):\n        result = Course._meta.get_field(\"instructor\")\n        message = \"Atributo 'instructor' do relacionamento 1:N não foi declarado corretamente.\"\n        self.assertIsInstance(result, ForeignKey, message)\n    def test_many_to_many_between_account_course(self):\n        result = Course._meta.get_field(\"students\")\n        message = (\n            \"Relacionamento N:N não foi declarado corretamente.\"\n            \"O comportamento esperado é: os cursos terão a chave 'students' \"",
+        "detail": "tests.courses.test_models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCreateCourseView",
+        "kind": 6,
+        "importPath": "tests.courses.test_views",
+        "description": "tests.courses.test_views",
+        "peekOfCode": "class TestCreateCourseView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.courses.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestReadCourseView",
+        "kind": 6,
+        "importPath": "tests.courses.test_views",
+        "description": "tests.courses.test_views",
+        "peekOfCode": "class TestReadCourseView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.courses.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestDeleteCourseView",
+        "kind": 6,
+        "importPath": "tests.courses.test_views",
+        "description": "tests.courses.test_views",
+        "peekOfCode": "class TestDeleteCourseView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.courses.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestRetrieveCourseView",
+        "kind": 6,
+        "importPath": "tests.courses.test_views",
+        "description": "tests.courses.test_views",
+        "peekOfCode": "class TestRetrieveCourseView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.courses.test_views",
+        "documentation": {}
+    },
+    {
+        "label": "TestUpdateCourseView",
+        "kind": 6,
+        "importPath": "tests.courses.test_views",
+        "description": "tests.courses.test_views",
+        "peekOfCode": "class TestUpdateCourseView(APITestCase):\n    @classmethod\n    def setUpTestData(cls) -> None:\n        cls.BASE_URL = \"/api/courses/\"\n        cls.superuser = baker.make(\"accounts.Account\", is_superuser=True)\n        cls.common_user = baker.make(\"accounts.Account\", is_superuser=False)\n        cls.superuser_token = str(\n            RefreshToken.for_user(cls.superuser).access_token,\n        )\n        cls.common_user_token = str(",
+        "detail": "tests.courses.test_views",
+        "documentation": {}
+    }
+]
