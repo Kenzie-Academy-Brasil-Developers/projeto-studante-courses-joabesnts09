@@ -1486,6 +1486,14 @@
         "documentation": {}
     },
     {
+        "label": "get_random_secret_key",
+        "importPath": "django.core.management.utils",
+        "description": "django.core.management.utils",
+        "isExtraImport": true,
+        "detail": "django.core.management.utils",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -1500,6 +1508,15 @@
         "importPath": "dotenv",
         "description": "dotenv",
         "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "dj_database_url",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dj_database_url",
+        "description": "dj_database_url",
+        "detail": "dj_database_url",
         "documentation": {}
     },
     {
@@ -2314,7 +2331,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\ndotenv.load_dotenv()\nSECRET_KEY = os.getenv(\"SECRET_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\ndotenv.load_dotenv()\nSECRET_KEY = os.getenv(\"SECRET_KEY\", get_random_secret_key())\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nRENDER_EXTERNAL_HOSTNAME = os.getenv(\"RENDER_EXTERNAL_HOSTNAME\")",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2323,7 +2340,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\")\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "peekOfCode": "SECRET_KEY = os.getenv(\"SECRET_KEY\", get_random_secret_key())\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nRENDER_EXTERNAL_HOSTNAME = os.getenv(\"RENDER_EXTERNAL_HOSTNAME\")\nif RENDER_EXTERNAL_HOSTNAME:\n    ALLOWED_HOSTS += [RENDER_EXTERNAL_HOSTNAME]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2332,7 +2349,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nRENDER_EXTERNAL_HOSTNAME = os.getenv(\"RENDER_EXTERNAL_HOSTNAME\")\nif RENDER_EXTERNAL_HOSTNAME:\n    ALLOWED_HOSTS += [RENDER_EXTERNAL_HOSTNAME]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2341,7 +2358,16 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",",
+        "peekOfCode": "ALLOWED_HOSTS = []\nRENDER_EXTERNAL_HOSTNAME = os.getenv(\"RENDER_EXTERNAL_HOSTNAME\")\nif RENDER_EXTERNAL_HOSTNAME:\n    ALLOWED_HOSTS += [RENDER_EXTERNAL_HOSTNAME]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "_core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "RENDER_EXTERNAL_HOSTNAME",
+        "kind": 5,
+        "importPath": "_core.settings",
+        "description": "_core.settings",
+        "peekOfCode": "RENDER_EXTERNAL_HOSTNAME = os.getenv(\"RENDER_EXTERNAL_HOSTNAME\")\nif RENDER_EXTERNAL_HOSTNAME:\n    ALLOWED_HOSTS += [RENDER_EXTERNAL_HOSTNAME]\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2359,7 +2385,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"_core.urls\"",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"whitenoise.middleware.WhiteNoiseMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2396,6 +2422,15 @@
         "importPath": "_core.settings",
         "description": "_core.settings",
         "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": os.getenv(\"POSTGRES_DB\"),\n        \"USER\": os.getenv(\"POSTGRES_USER\"),\n        \"PASSWORD\": os.getenv(\"POSTGRES_PASSWORD\"),\n        \"HOST\": \"127.0.0.1\",\n        \"PORT\": 5432,\n    }\n}",
+        "detail": "_core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "_core.settings",
+        "description": "_core.settings",
+        "peekOfCode": "DATABASE_URL = os.getenv('DATABASE_URL')\nif DATABASE_URL:\n    db_from_env = dj_database_url.config(\n        default=DATABASE_URL, conn_max_age=500, ssl_require=True)\n    DATABASES['default'].update(db_from_env)\n    DEBUG = False\nif not DEBUG:\n    STATIC_ROOT = os.path.join(BASE_DIR, \"staticfiles\")\n    STATICFILES_STORAGE = \"whitenoise.storage.CompressedManifestStaticFilesStorage\"\n# Password validation",
         "detail": "_core.settings",
         "documentation": {}
     },
