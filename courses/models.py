@@ -9,16 +9,20 @@ class StatusChoice(models.TextChoices):
 
 
 class Course(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4())
+    id = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
     name = models.CharField(max_length=100, unique=True)
     status = models.CharField(
-        max_length=20, choices=StatusChoice.choices, default=StatusChoice.NOT_STARTED
+        max_length=11, choices=StatusChoice.choices, default=StatusChoice.NOT_STARTED
     )
-    start_date = models.DateTimeField(auto_now_add=True)
-    end_date = models.DateTimeField(auto_now_add=True)
+    start_date = models.DateField()
+    end_date = models.DateField()
 
     instructor = models.ForeignKey(
-        "accounts.Account", on_delete=models.CASCADE, related_name="courses"
+        "accounts.Account",
+        on_delete=models.CASCADE,
+        related_name="courses",
+        null=True,
+        blank=True,
     )
 
     students = models.ManyToManyField(
