@@ -1503,6 +1503,22 @@
         "documentation": {}
     },
     {
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -2334,7 +2350,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"accounts\",\n    \"courses\",",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"drf_spectacular\",\n    \"accounts\",",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2415,7 +2431,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"\nREST_FRAMEWORK = {",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2424,7 +2440,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2433,7 +2449,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\n# _core/settings.py\nSPECTACULAR_SETTINGS = {",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2442,7 +2458,7 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"accounts.Account\"\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\n# _core/settings.py\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Course Management API',\n    'DESCRIPTION': 'Course, teacher and student management',\n    'VERSION': '1.0.0',",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2451,7 +2467,25 @@
         "kind": 5,
         "importPath": "_core.settings",
         "description": "_core.settings",
-        "peekOfCode": "AUTH_USER_MODEL = \"accounts.Account\"",
+        "peekOfCode": "AUTH_USER_MODEL = \"accounts.Account\"\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\n# _core/settings.py\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Course Management API',\n    'DESCRIPTION': 'Course, teacher and student management',\n    'VERSION': '1.0.0',\n}",
+        "detail": "_core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "_core.settings",
+        "description": "_core.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\n# _core/settings.py\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Course Management API',\n    'DESCRIPTION': 'Course, teacher and student management',\n    'VERSION': '1.0.0',\n}",
+        "detail": "_core.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPECTACULAR_SETTINGS",
+        "kind": 5,
+        "importPath": "_core.settings",
+        "description": "_core.settings",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Course Management API',\n    'DESCRIPTION': 'Course, teacher and student management',\n    'VERSION': '1.0.0',\n}",
         "detail": "_core.settings",
         "documentation": {}
     },
@@ -2460,7 +2494,7 @@
         "kind": 5,
         "importPath": "_core.urls",
         "description": "_core.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('accounts.urls')),\n    path('api/', include('courses.urls')),\n    path('api/', include('contents.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('api/', include('accounts.urls')),\n    path('api/', include('courses.urls')),\n    path('api/', include('contents.urls')),\n    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),\n    path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),\n]",
         "detail": "_core.urls",
         "documentation": {}
     },
