@@ -11,7 +11,7 @@ https://course-app-m0ee.onrender.com/api/
 https://course-app-m0ee.onrender.com/api/docs/
 ```
 
--> Obs: A API está ospedada no RENDER, então a primeira requisição vai demorar alguns segundos
+-> Obs: A API está hospedada no RENDER, então a primeira requisição vai demorar alguns segundos
 
 ## Preparando ambiente para execução dos testes
 
