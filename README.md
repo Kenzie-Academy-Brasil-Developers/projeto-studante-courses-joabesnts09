@@ -1,4 +1,13 @@
-# M5 - Projeto Final Kanvas
+## Deploy
+````
+https://course-app-m0ee.onrender.com/api/
+```
+````
+
+## Docs
+```
+https://course-app-m0ee.onrender.com/api/docs/
+```
 
 ## Preparando ambiente para execução dos testes
 
